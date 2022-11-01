@@ -6,3 +6,14 @@ UniTask.csproj
 UniTask.Editor.csproj
 UniTask.Linq.csproj
 UniTask.TextMeshPro.csproj
+Assets/Plugins.meta
+*.meta
+*.json
+*.csproj
+*.cs
+Library/AnnotationManager
+*.graph
+Library/*
+Logs/*
+Temp/*
+*.asmdef
