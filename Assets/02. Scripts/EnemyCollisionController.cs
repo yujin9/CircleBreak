@@ -6,6 +6,7 @@ using DG.Tweening;
 public class EnemyCollisionController : CollisionController
 {
     private Vector3 _originPos;
+    private Sequence mySequence;
 
     private void Awake()
     {
@@ -37,8 +38,11 @@ public class EnemyCollisionController : CollisionController
 
     IEnumerator Hit()
     {
-        transform.DOShakePosition(0.03f, 0.25f);
-        transform.position = _originPos;
-        yield return new WaitUntil(() => transform.position == _originPos);
+        //transform.DOShakePosition(0.03f, 0.25f);
+        //transform.position = _originPos;
+
+        transform.DOScale(3.3f, 0.05f);
+        yield return new WaitForSeconds(0.05f);
+        transform.DOScale(3f, 0.05f);
     }
 }
